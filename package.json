@@ -14,6 +14,6 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url='./'",
-    "pre-push": "npm run build surge --project ./dist --domain martinforsell.se"
+    "prepush": "npm run build && surge --project ./dist --domain martinforsell.surge.sh"
   }
 }
