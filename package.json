@@ -11,9 +11,13 @@
     "node-sass": "^4.9.3",
     "surge": "^0.20.1"
   },
+  "git": { 
+    "scripts": { 
+      "pre-push": "npm run build && surge --project ./dist --domain martinforsell.surge.sh"
+    }
+  },
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url='./'",
-    "prepush": "npm run build && surge --project ./dist --domain martinforsell.surge.sh"
   }
 }
