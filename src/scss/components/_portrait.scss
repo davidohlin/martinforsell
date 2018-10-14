@@ -1,0 +1,18 @@
+.portrait {
+	position: relative;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: calc(100vw - 36rem);
+	height: 100vh;
+	background: grey;
+	overflow: hidden;
+}
+
+.portrait__img {
+	width: calc(100vw - 36rem);
+	height: 100vh;
+	object-fit: none;
+	object-position: 50% 10%;
+}

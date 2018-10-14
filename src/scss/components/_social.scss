@@ -1,0 +1,28 @@
+.social {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.social__item {
+	display: inline-flex;
+	margin-right: .75rem;
+
+}
+
+.social__link {
+	display: block;
+
+}
+
+.social__icon {
+	display: block;
+	height: 2rem;
+	transition: fill .1s ease-in-out;
+}
+
+.email:hover         { fill: #0389ff }
+.facebook:hover      { fill: #3b5998 }
+.instagram:hover     { fill: #833ab4 }
+.spotify:hover       { fill: #1db954 }
+.youtube:hover       { fill: #ff0000 }

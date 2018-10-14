@@ -1,0 +1,19 @@
+{
+  "name": "martinforsell",
+  "version": "1.0.0",
+  "description": "Site for Martin Forsell",
+  "main": "index.js",
+  "repository": "https://github.com/davidohlin/martinforsell",
+  "author": "David Öhlin",
+  "license": "MIT",
+  "devDependencies": {
+    "git-scripts": "^0.2.1",
+    "node-sass": "^4.9.3",
+    "surge": "^0.20.1"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url='./'",
+    "pre-push": "npm run build surge --project ./dist --domain martinforsell.se"
+  }
+}

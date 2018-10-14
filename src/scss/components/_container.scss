@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	max-width: 36rem;
+	padding: 1.5rem;
+
+	@supports (-webkit-overflow-scrolling: touch) {
+		max-height: 100vh;
+		height: 100vh;
+  		padding-bottom: 4rem;
+	}
+
+	@media screen and (min-width: $breakpoint-sm) {
+		padding: 4rem;
+	}
+}

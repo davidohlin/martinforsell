@@ -1,0 +1,58 @@
+html {
+	box-sizing: border-box;
+	text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Chivo';
+
+	@supports (-webkit-overflow-scrolling: touch) {
+		max-height: 100vh;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+strong, .strong { font-weight: 700 }
+
+a {
+	text-decoration: none;
+	font-weight: 700;
+	color: #333;
+}
+
+p {
+	line-height: 1.4;
+	margin-bottom: 1em;
+	color: #333;
+	font-weight: 400;
+}
+
+.title {
+	font-size: 4rem;
+	text-transform: uppercase;
+	line-height: 0.85;
+	margin: 0;
+}
+
+.sub-title {
+	font-size: 1.25rem;
+	line-height: 1.25;
+	font-weight: 400;
+}
+
+ul {
+
+}
+
+li {
+	list-style-type: none;
+}
