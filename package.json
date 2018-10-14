@@ -12,12 +12,14 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run build && surge --project ./dist --domain martinforsell.surge.sh"
+      "pre-push": "if git-branch-is master; then npm run build && surge --project ./dist --domain martinforsell.surge.sh; fi"
     }
   },
   "devDependencies": {
+    "cssnano": "^4.1.4",
     "husky": "^1.1.2",
     "node-sass": "^4.9.3",
-    "surge": "^0.20.1"
+    "surge": "^0.20.1",
+    "git-branch-is": "^2.1.0"
   }
 }
