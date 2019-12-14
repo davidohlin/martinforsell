@@ -16,4 +16,4 @@ $ npm run build
 
 ## Deployment
 
-Automatically deploys to [Surge](https://surge.sh/) on push.
+Automatically deploys to [Netlify](https://netlify.com/) on push to master.
